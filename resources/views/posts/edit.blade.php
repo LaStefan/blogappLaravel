@@ -11,6 +11,7 @@
             {{Form::label('body','Body')}}
             {{Form::textarea('body',$post->body,['class'=>'form-control','placeholder'=>'Body Text'])}}
         </div>
+        <a href="/dashboard" class="btn btn-primary">Back</a>
         {{Form::hidden('_method','PUT')}}
         {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
