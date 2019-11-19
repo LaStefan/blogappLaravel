@@ -18,7 +18,7 @@ class PagesController extends Controller
     public function services(){
         $data = array(
             'title'=>'Services',
-            'services'=> ['Web Design','Programming','Operating Systems']
+            'services'=> ['Web Design','Programming','Operating Systems','Embedded Systems','Web Development','Full-Stack Development','Front-End Development','Back-End Development','Client Server Applications']
         );
         return view('pages.services')->with($data);
     }

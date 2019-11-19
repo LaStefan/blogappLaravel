@@ -9,6 +9,7 @@
     <hr>
     <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
     <hr>
+    
     <div class="container">
     <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
     <a href="/posts" class="btn btn-primary">Back</a>
@@ -18,5 +19,6 @@
         {{Form::submit('Delete',['class'=>'btn btn-danger'])}}
         {!!Form::close()!!}
         </div>
+       
 </div>
 @endsection
