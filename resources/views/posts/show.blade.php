@@ -3,6 +3,8 @@
 @section('content')
 <div class="container">
     <h1>{{$post->title}}</h1>
+    <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
+    <br><br>
     <div>
         {{$post->body}}
     </div>
@@ -12,7 +14,7 @@
     
     <div class="container">
     <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
-    <a href="/posts" class="btn btn-primary">Back</a>
+    <a href="/posts" class="btn btn-primary">Cancel</a>
         <hr>
         {!!Form::open(['action' => ['PostsController@destroy',$post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
         {{Form::hidden('_method','DELETE')}}

@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<br><br>
         <h1>{{$title}}</h1>
+        <hr>
         @if(count($services)>0)
         <ul class="list-group">
                 @foreach($services as $service)
