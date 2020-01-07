@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 
 
+
 class PostsTableSeeder extends Seeder
 {
     /**
@@ -18,9 +19,10 @@ class PostsTableSeeder extends Seeder
             'body' => $faker->text(200),
             'user_id' => 1,
             'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
-            'cover_image' => $faker->imageUrl(100, 100),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
             
         ]);
+        
         
     }
 }
