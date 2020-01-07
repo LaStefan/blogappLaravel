@@ -19,6 +19,7 @@ It is also important that nowdays we educate people and children about these top
 Main focus of this web application is that users are free to do most of the things, you can upload pictures, posts, texts, but you can also delete and edit them, you have your own dashboard that only you can see, but you also can access blog page where you can see all the blogs.
 In the service page you can see all the topics people should focus on and talk about, but there can be much more than that.
 
-## Hint for the teacher how to test the app
+# Please read this carefully before testing 
+## Important hint for testing the application
 
-If you run the web app on your machine there may not be any dummy data, but I advise you to register 2 profiles and make more than 5 posts, for example 3 posts for each profile, so you can test it properly and see how authorization, access control and other features work. 
+If you run the web app on your machine there may not be any dummy data, so you will need to do db:seed command, once you do that, you will get one user and one post. Only problem that occurs is that when you want to log in with that user, website won't let you, because I use encryption for password so it will behave like they don't recongize that user, but actually he is there and the post exists so you will have to register with your own account and then test the app and you will see when you go to the blog page, that user from dummy data actually exists as well as his post.
