@@ -20,6 +20,9 @@ Main focus of this web application is that users are free to do most of the thin
 In the service page you can see all the topics people should focus on and talk about, but there can be much more than that.
 
 # Please read this carefully before testing 
-## Important hint for testing the application
+## Important hint 
 
-If you run the web app on your machine there may not be any dummy data, so you will need to do db:seed command, once you do that, you will get one user and one post. Only problem that occurs is that when you want to log in with that user, website won't let you, because I use encryption for password so it will behave like they don't recongize that user, but actually he is there and the post exists so you will have to register with your own account and then test the app and you will see when you go to the blog page, that user from dummy data actually exists as well as his post.
+If you run the web app on your machine there may not be any dummy data, so you will need to do db:seed command, once you do that, you will get one user and six posts. 
+Password for that user is: 12345678
+
+But my advice is to, after seeding, register your own account and then see the difference and test the web app in a proper way check if the dates are correct, name of the user who made the blog, etc. One problem occurs when you seed the dummy data the pictures on the blog page they don't appear, but when you make the post and upload pictures from your pc they show up nicely, please check it out.

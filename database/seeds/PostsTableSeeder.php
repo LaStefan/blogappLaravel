@@ -22,6 +22,46 @@ class PostsTableSeeder extends Seeder
             'cover_image' => $faker->imageUrl($width = 640, $height = 480),
             
         ]);
+        DB::table('posts')->insert([
+            'title' => $faker->word,
+            'body' => $faker->text(200),
+            'user_id' => 1,
+            'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
+            
+        ]);
+        DB::table('posts')->insert([
+            'title' => $faker->word,
+            'body' => $faker->text(200),
+            'user_id' => 1,
+            'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
+            
+        ]);
+        DB::table('posts')->insert([
+            'title' => $faker->word,
+            'body' => $faker->text(200),
+            'user_id' => 1,
+            'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
+            
+        ]);
+        DB::table('posts')->insert([
+            'title' => $faker->word,
+            'body' => $faker->text(200),
+            'user_id' => 1,
+            'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
+            
+        ]);
+        DB::table('posts')->insert([
+            'title' => $faker->word,
+            'body' => $faker->text(200),
+            'user_id' => 1,
+            'created_at'=>$faker->dateTime($max = 'now', $timezone = null),
+            'cover_image' => $faker->imageUrl($width = 640, $height = 480),
+            
+        ]);
         
         
     }
